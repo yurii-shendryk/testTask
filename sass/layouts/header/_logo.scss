@@ -1,18 +1,17 @@
-.logo{
- display: flex;
+.logo {
+  display: flex;
 
- align-items: center;
- 
- 
+  align-items: center;
 }
-.logo__icon{
-    width: 11px;
-    height: 33px;
- margin-right: 10px;
- fill: $active-link;
+.logo__icon {
+  width: 11px;
+  height: 33px;
+  margin-right: 10px;
+  fill: $active-link;
 }
 
-.logo__text{
-    width: 106px;
-height: 16px;
+.logo__text {
+  width: 106px;
+  height: 16px;
+  fill: $main-color;
 }

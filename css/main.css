@@ -9,8 +9,7 @@ Use a better box model (opinionated).
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /**
@@ -18,8 +17,7 @@ Use a more readable tab size (opinionated).
 */
 :root {
   -moz-tab-size: 4;
-  -o-tab-size: 4;
-     tab-size: 4;
+  tab-size: 4;
 }
 
 /**
@@ -74,8 +72,7 @@ Text-level semantics
 Add the correct text decoration in Chrome, Edge, and Safari.
 */
 abbr[title] {
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
 /**
@@ -94,7 +91,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -269,6 +266,78 @@ summary {
   display: list-item;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+ul,
+ol,
+li,
+form,
+fieldset,
+legend {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 0 34px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1080px;
+    padding: 0 15px;
+  }
+}
+
 @font-face {
   font-family: 'DM Sans', sans-serif;
   src: url("../../fonts/DMSans-Regular.ttf");
@@ -282,6 +351,7 @@ summary {
 }
 
 .container {
+  position: relative;
   width: 1440px;
   margin-left: auto;
   margin-right: auto;
@@ -301,63 +371,54 @@ summary {
   height: auto;
 }
 
+.button {
+  border-radius: 0 18px 0 0;
+}
+
 a {
   text-decoration: none;
 }
 
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   padding-top: 32px;
+  background-color: transparent;
+  z-index: 99;
 }
 
 .header__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .logo__icon {
   width: 11px;
   height: 33px;
   margin-right: 10px;
-  fill: #FFAC12;
+  fill: #ffac12;
 }
 
 .logo__text {
   width: 106px;
   height: 16px;
+  fill: #fff;
 }
 
 .navigation__menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .navigation__item:not(:last-child) {
@@ -365,19 +426,21 @@ a {
 }
 
 .navigation__item:last-child {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 211px;
   padding: 14px 40px;
-  background-color: #FFAC12;
-  border-radius: 0 18px 0 0;
+  background-color: #ffac12;
+  color: #fff;
+}
+
+.navigation__item:last-child > a {
+  color: #000000;
 }
 
 .navigation__link {
   font-size: 15px;
   font-weight: 700;
   line-height: 1.3;
+  color: #fff;
 }
 
 .navigation__text {
@@ -391,7 +454,53 @@ a {
 }
 
 .hero {
+  position: relative;
   max-width: 1440px;
-  min-height: 982px;
+  height: 850px;
+  background-color: #000000;
+  margin: 0 auto;
+  background-image: linear-gradient(198.73deg, rgba(0, 0, 0, 0.0001) 15.31%, rgba(0, 0, 0, 0.837986) 67.37%), url("../../../img/etienne-beauregard-riverin-B0aCvAVSX8E-unsplash.jpg");
+}
+
+.hero__title {
+  padding-top: 200px;
+  max-width: 519px;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -2.01px;
+  color: #fff;
+}
+
+.hero__text {
+  margin-top: 22px;
+  max-width: 428px;
+  font-size: 20px;
+  color: #fff;
+  opacity: 0.6;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.hero__button {
+  width: 100%;
+  margin-top: 176px;
+  padding: 37px 861px 37px 40px;
+  border: 0;
+}
+
+.text-hero__button {
+  margin-right: 15px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.302;
+  color: #000000;
+  letter-spacing: -0.5px;
+}
+
+.icon-hero__button {
+  width: 20px;
+  height: 10px;
+  fill: #ffac12;
 }
 /*# sourceMappingURL=main.css.map */
