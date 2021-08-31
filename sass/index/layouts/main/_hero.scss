@@ -14,9 +14,7 @@
 
 .hero__title {
   padding-top: 200px;
-
   max-width: 519px;
-
   font-size: 80px;
   font-weight: 700;
   line-height: 1;
@@ -35,10 +33,12 @@
 }
 
 .hero__button {
-  width: 100%;
-  margin-top: 176px;
+  position: absolute;
+  bottom: 0;
   padding: 37px 861px 37px 40px;
   border: 0;
+  background-color: $main-color;
+
 }
 
 .text-hero__button {

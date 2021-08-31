@@ -1,0 +1,11 @@
+@import "./utils/variables";
+@import "./base/normalize";
+@import "./base/reset";
+@import "./base/fonts";
+@import "./base/common";
+@import "./index/layouts/header/header";
+@import "./index/layouts/header/logo";
+@import "./index/layouts/header/navigation";
+@import "./details/layouts/main/goods";
+@import "./details/layouts/main/info";
+@import "./details/components/example";

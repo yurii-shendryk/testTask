@@ -1,0 +1,17 @@
+
+.info-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: $main-bg-color;
+    padding-top: 60px;
+}
+
+
+.info__thumb{
+    width: 704px;
+}
+
+.info__img{
+    border-radius: 0 57px 0 0;
+}
+

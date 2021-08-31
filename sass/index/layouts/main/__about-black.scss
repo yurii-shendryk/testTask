@@ -1,0 +1,30 @@
+.about__black{
+    @extend .about;
+    padding-top: 150px;
+    
+}
+
+.about__black-container{
+    padding-top: 171px;
+    padding-bottom: 150px;
+    background-color: $main-black;
+    text-align: center;
+}
+
+.about__black-content{
+    @extend .about__content;
+    display: inline-block;
+    max-width: 475px;
+}
+
+.about__black-content::before{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+.about__black-text{
+@extend .about__text;
+color: $main-color;
+}
