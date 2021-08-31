@@ -2,17 +2,31 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
   padding-top: 32px;
   background-color: transparent;
   z-index: 99;
+}
+
+.details__header{
+position:initial;
 }
 
 .header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.details__header-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top:32px;
+  padding-bottom: 32px;
+  background-color: $main-black;
+  border-bottom: 1px solid $footer-title-border;
 }

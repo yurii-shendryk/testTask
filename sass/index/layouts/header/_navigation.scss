@@ -1,24 +1,20 @@
-.navigation {
-}
+
 
 .navigation__menu {
   display: flex;
   align-items: center;
 }
 
-.navigation__item:not(:last-child) {
+.navigation__item{
   margin-right: 60px;
 }
 
-.navigation__item:last-child {
+.connect__button {
   width: 211px;
   padding: 14px 40px;
   background-color: $active-link;
-  color: $main-color;
-
-  & > a {
-    color: $main-black;
-  }
+  color: $main-black;
+  border: none;
 }
 .navigation__link {
   font-size: 15px;
