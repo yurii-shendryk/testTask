@@ -1,11 +1,11 @@
 .gallery {
   margin-top: 104px;
+  background-color: $main-bg-color;
 }
 
 .gallerty__container {
   padding-top: 237px;
   padding-bottom: 393px;
-  background-color: $main-bg-color;
 }
 
 .gallery__title {
@@ -29,6 +29,7 @@
 
 .gallery__filters {
   display: flex;
+  margin-top: 60px;
 }
 
 .gallery__filters-item {
