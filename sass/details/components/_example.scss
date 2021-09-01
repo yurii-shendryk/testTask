@@ -1,17 +1,16 @@
-.examples{
-    display: flex;
-    margin-top: 20px;
+.examples {
+  display: flex;
+  margin-top: 20px;
 }
 
-.example:not(:last-child){
-    margin-right: 24px;
+.example:not(:last-child) {
+  margin-right: 24px;
 }
 
-.example__thumb{
-    width: 80px;
+.example__thumb {
+  width: 80px;
 }
 
-
-.example__img{
-    border-radius: 0 16px 0 0;
+.example__img {
+  border-radius: 0 16px 0 0;
 }

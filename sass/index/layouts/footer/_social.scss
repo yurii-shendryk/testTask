@@ -1,32 +1,40 @@
-.social{
-    margin-top: 30px;
-    display: flex;
+.social {
+  margin-top: 30px;
+  display: flex;
 }
 
-.social__item:not(:last-child){
-margin-right: 40px;
+.social__item {
+  transition: all 250ms $timing;
+  &:hover,
+  &:focus {
+    .social__icon {
+      fill: $active-link;
+    }
+  }
 }
 
-
-
-.social__icon{
-    fill: $main-color;
+.social__item:not(:last-child) {
+  margin-right: 40px;
 }
 
-.facebook__icon{
-@extend .social__icon;
-width: 10px;
-height: 20px;
+.social__icon {
+  fill: $main-color;
 }
 
-.twitter__icon{
-    @extend .social__icon;
-    width: 22px;
-height: 18px;
+.facebook__icon {
+  @extend .social__icon;
+  width: 10px;
+  height: 20px;
 }
 
-.instagram__icon{
-    @extend .social__icon;
-    width: 22px;
-height: 22px;
+.twitter__icon {
+  @extend .social__icon;
+  width: 22px;
+  height: 18px;
+}
+
+.instagram__icon {
+  @extend .social__icon;
+  width: 22px;
+  height: 22px;
 }

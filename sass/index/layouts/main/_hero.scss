@@ -9,7 +9,7 @@
       $overlay-start 15.31%,
       $overlay-end 67.37%
     ),
-    url("../../../img/etienne-beauregard-riverin-B0aCvAVSX8E-unsplash.jpg");
+    url('../../../img/etienne-beauregard-riverin-B0aCvAVSX8E-unsplash.jpg');
 }
 
 .hero__title {
@@ -39,9 +39,16 @@
   border: 0;
   background-color: $main-color;
 
+  transition: all 250ms $timing;
+  &:hover,
+  &:focus {
+    .hero__button-text {
+      color: $active-link;
+    }
+  }
 }
 
-.text-hero__button {
+.hero__button-text {
   margin-right: 15px;
   font-size: 20px;
   font-weight: 700;
@@ -50,7 +57,7 @@
   letter-spacing: -0.5px;
 }
 
-.icon-hero__button {
+.hero__button-icon {
   width: 20px;
   height: 10px;
   fill: $active-link;
