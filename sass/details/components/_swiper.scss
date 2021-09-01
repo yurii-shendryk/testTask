@@ -1,0 +1,12 @@
+.swiper {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-slide {
+  margin-bottom: 0;
+}
+
+.swiper-slide:nth-child(3n) {
+  margin-right: 31px;
+}

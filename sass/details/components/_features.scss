@@ -1,0 +1,9 @@
+.features {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feature:not(:last-child) {
+  margin-right: 124px;
+}

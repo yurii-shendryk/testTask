@@ -1,0 +1,17 @@
+.condition {
+  display: flex;
+  align-items: center;
+}
+
+.condition:not(:first-child) {
+  margin-top: 20px;
+}
+
+.condition::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  background-image: url('../../../img/Check\ Yellow.svg');
+}

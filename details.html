@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/details.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <title>Document</title>
 </head>
 <body>
     <header class="details__header">
         <div class="container details__header-container">
-          <a href="" class="logo">
+          <a href="./index.html" class="logo">
             <svg class="logo__icon" aria-label="logo">
               <use href="./img/symbol-defs.svg#icon-logo" class=""></use>
             </svg>
@@ -63,8 +67,8 @@
 <p class="goods_price-text">$2,800/sq ft</p>
 </div>
               </div>
-          </section>
-          <section class="info">
+          
+          <article class="info">
 <div class="container info-container">
     <div class="info-wrapper">
         <div class="info__thumb">
@@ -100,13 +104,484 @@
                     <img src="./img/Rectangle (7).jpg" alt="" class="example__img img">
                 </li>
             </ul>
-        
-        
-    </div>
+    
+
+<article class="article">
+<h2 class="article-title">
+  Details
+</h2>
+<ul class="details">
+  <li class="detail">
+    
+      <svg class="detail-icon">
+        <use href="./img/symbol-defs.svg#icon-hotel-single-bed"></use>
+      </svg>
+      <span class="detail-text">4</span>
+    
+  </li>
+  <li class="detail">
+    
+      <svg class="detail-icon">
+        <use href="./img/symbol-defs.svg#icon-bathroom"></use>
+      </svg>
+      <span class="detail-text">2</span>
+    
+  </li>
+  <li class="detail">
+    
+      <svg class="detail-icon">
+        <use href="./img/symbol-defs.svg#icon-grid-artboard"></use>
+      </svg>
+      <span class="detail-text">2</span>
+    
+  </li>
+  <li class="detail">
+    
+      <svg class="detail-icon">
+        <use href="./img/symbol-defs.svg#icon-garage"></use>
+      </svg>
+      <span class="detail-text">1</span>
+    
+  </li>
+  <li class="detail">
+  
+    <svg class="detail-icon">
+      <use href="./img/symbol-defs.svg#icon-calendar"></use>
+    </svg>
+    <span class="detail-text">2007</span>
+  
+  </li>
+</ul>
+</article>
+
+<article class="article">
+  <h2 class="article-title">
+    Description
+  </h2>
+ <div class="article-text">
+  <p class="article-paragraph">At vero eos et iusto odio dignissimos ducimus, qui haec putat, ut ipsi auctori huius disciplinae placet: constituam,
+  quid sit numeranda nec me ab illo inventore veritatis et expedita distinctio nam libero tempore, cum memoriter, tum
+  etiam ac ratione.</p>
+  <p class="article-paragraph">Si sine metu degendae praesidia firmissima filium morte multavit si sine causa? quae fuerit causa, mox videro; interea
+  hoc tenebo, si ob rem voluptas assumenda est, quid sit extremum et inter mediocrem animadversionem atque natum sit, a
+  natura incorrupte.</p>
+  <p class="article-paragraph">Omne animal, simul atque in sanguinem suum tam inportuno tamque crudeli; sin, ut earum motus et accusamus et
+  argumentandum et dolore suo sanciret militaris imperii disciplinam exercitumque in liberos atque haec ratio late patet
+  in quo pertineant non possim.</p> 
+ </div>
+</article>
+
+<article class="article">
+  <h2 class="article-title">
+    Features
+  </h2>
+    <ul class="features article-text">
+      <li class="feature">
+        <ul class="conditions">
+          <li class="condition">Air Conditioning</li>
+          <li class="condition">Air Conditioning</li>
+          <li class="condition">Air Conditioning</li>
+          <li class="condition">Air Conditioning</li>
+          <li class="condition">Air Conditioning</li>
+        </ul>
+      </li>
+      <li class="feature">
+        <ul class="conditions">
+          <li class="condition">Air Conditioning</li>
+          <li class="condition">Air Conditioning</li>
+          <li class="condition">Air Conditioning</li>
+          <li class="condition">Air Conditioning</li>
+          <li class="condition">Air Conditioning</li>
+        </ul>
+      </li>
+      <li class="feature">
+        <ul class="conditions">
+          <li class="condition">Air Conditioning</li>
+          <li class="condition">Air Conditioning</li>
+          <li class="condition">Air Conditioning</li>
+          <li class="condition">Air Conditioning</li>
+          <li class="condition">Air Conditioning</li>
+        </ul>
+      </li>
+    </ul>
+</article>
 </div>
-<aside>
+<aside class="aside">
+  <form class="form" id="contact-form">
+    <div class="employee">
+      <img src="./img/Avatar Image.svg" alt="avatar" class="employee-img">
+      <div class="employee-content">
+        <h4 class="employee-name">Kayley Hall</h4>
+        <a href="" class="employee-profile">View profile</a>
+      </div>
+      </div>
+      <div class="form-field form-field--first">
+        <input type="text" name="name" id="name" class="form-input" placeholder="Name" pattern="^[a-zA-ZА-Яа-яЁёї'іє\s]+$"
+          autocomplete="off" required>
+      </div>
+      <div class="form-field">
+        <input type="tel" name="phone" id="phone" class="form-input" placeholder="Phone" pattern="[0-9]{10,12}"
+          autocomplete="off" required>
+      </div>
+      <div class="form-field">
+        <input type="mail" name="name" id="mail" class="form-input" placeholder="Email" autocomplete="off" required>
+      </div>
+      <div class="form-field">
+        <textarea name="comment" id="comment" placeholder="Hello, I am interested in…" class="form-textarea"></textarea>
+      </div>
+      <button type="button" class="button about__button--fullsize">
+        <span class="about__button-text">Learn more</span>
+        <svg class="about__button-icon" aria-label="Learn more">
+          <use href="./img/symbol-defs.svg#icon-arrow-right" class=""></use>
+        </svg>
+      </button>
+  </form>
     </aside>
-              </section>
+    </div>
+  </article>
+  <section class="gallery listings">
+   <div class="container listings-container">
+      <h2 class="gallery__title">
+        Similar listings
+      </h2>
+      <div class="swiper">
+        <ul class="gallery__list list listings__list swiper-wrapper">
+        
+          <li class="gallery__item swiper-slide">
+            <a href="./details.html" class="gallery__link">
+              <div class="gallery__item-thumb">
+                <img src="./img/House Example 1.jpg" alt="house example 1" class="img gallery__img">
+              </div>
+              <h3 class="gallery__item-title">Malto House</h3>
+        
+              <ul class="gallery__icons list">
+                <li class="gallery__icons-item">
+        
+                  <svg class="gallery__icon" aria-label="Property Type">
+                    <use href="./img/symbol-defs.svg#icon-hotel-single-bed"></use>
+                  </svg>
+                  <span class="gallery__text">4</span>
+                  </button>
+                </li>
+                <li class="gallery__icons-item">
+        
+                  <svg class="gallery__icon" aria-label="Property Type">
+                    <use href="./img/symbol-defs.svg#icon-bathroom"></use>
+                  </svg>
+                  <span class="gallery__text">2</span>
+                  </button>
+                </li>
+                <li class="gallery__icons-item">
+        
+                  <svg class="gallery__icon" aria-label="Property Type">
+                    <use href="./img/symbol-defs.svg#icon-grid-artboard"></use>
+                  </svg>
+                  <span class="gallery__text">2</span>
+                </li>
+              </ul>
+            </a>
+          </li>
+        
+        
+          <li class="gallery__item swiper-slide">
+            <a href="./details.html" class="gallery__link">
+              <div class="gallery__item-thumb">
+                <img src="./img/House Example 2.jpg" alt="house example 1" class="img gallery__img">
+              </div>
+              <h3 class="gallery__item-title">Malto House</h3>
+        
+              <ul class="gallery__icons list">
+                <li class="gallery__icons-item">
+        
+                  <svg class="gallery__icon" aria-label="Property Type">
+                    <use href="./img/symbol-defs.svg#icon-hotel-single-bed"></use>
+                  </svg>
+                  <span class="gallery__text">4</span>
+                  </button>
+                </li>
+                <li class="gallery__icons-item">
+        
+                  <svg class="gallery__icon" aria-label="Property Type">
+                    <use href="./img/symbol-defs.svg#icon-bathroom"></use>
+                  </svg>
+                  <span class="gallery__text">2</span>
+                  </button>
+                </li>
+                <li class="gallery__icons-item">
+        
+                  <svg class="gallery__icon" aria-label="Property Type">
+                    <use href="./img/symbol-defs.svg#icon-grid-artboard"></use>
+                  </svg>
+                  <span class="gallery__text">2</span>
+                </li>
+              </ul>
+            </a>
+          </li>
+        
+        
+        
+          <li class="gallery__item swiper-slide">
+            <a href="./details.html" class="gallery__link">
+              <div class="gallery__item-thumb">
+                <img src="./img/House Example 3.jpg" alt="house example 1" class="img gallery__img">
+              </div>
+              <h3 class="gallery__item-title">Malto House</h3>
+        
+              <ul class="gallery__icons list">
+                <li class="gallery__icons-item">
+        
+                  <svg class="gallery__icon" aria-label="Property Type">
+                    <use href="./img/symbol-defs.svg#icon-hotel-single-bed"></use>
+                  </svg>
+                  <span class="gallery__text">4</span>
+                  </button>
+                </li>
+                <li class="gallery__icons-item">
+        
+                  <svg class="gallery__icon" aria-label="Property Type">
+                    <use href="./img/symbol-defs.svg#icon-bathroom"></use>
+                  </svg>
+                  <span class="gallery__text">2</span>
+                  </button>
+                </li>
+                <li class="gallery__icons-item">
+        
+                  <svg class="gallery__icon" aria-label="Property Type">
+                    <use href="./img/symbol-defs.svg#icon-grid-artboard"></use>
+                  </svg>
+                  <span class="gallery__text">2</span>
+                </li>
+              </ul>
+            </a>
+          </li>
+        
+        
+          <li class="gallery__item swiper-slide">
+            <a href="./details.html" class="gallery__link">
+              <div class="gallery__item-thumb">
+                <img src="./img/House Example 4.jpg" alt="house example 1" class="img gallery__img">
+              </div>
+              <h3 class="gallery__item-title">Malto House</h3>
+        
+              <ul class="gallery__icons list">
+                <li class="gallery__icons-item">
+        
+                  <svg class="gallery__icon" aria-label="Property Type">
+                    <use href="./img/symbol-defs.svg#icon-hotel-single-bed"></use>
+                  </svg>
+                  <span class="gallery__text">4</span>
+                  </button>
+                </li>
+                <li class="gallery__icons-item">
+        
+                  <svg class="gallery__icon" aria-label="Property Type">
+                    <use href="./img/symbol-defs.svg#icon-bathroom"></use>
+                  </svg>
+                  <span class="gallery__text">2</span>
+                  </button>
+                </li>
+                <li class="gallery__icons-item">
+        
+                  <svg class="gallery__icon" aria-label="Property Type">
+                    <use href="./img/symbol-defs.svg#icon-grid-artboard"></use>
+                  </svg>
+                  <span class="gallery__text">2</span>
+                </li>
+              </ul>
+            </a>
+          </li>
+        
+        
+        
+          <li class="gallery__item swiper-slide">
+            <a href="./details.html" class="gallery__link">
+              <div class="gallery__item-thumb">
+                <img src="./img/House Example 1.jpg" alt="house example 1" class="img gallery__img">
+              </div>
+              <h3 class="gallery__item-title">Malto House</h3>
+        
+              <ul class="gallery__icons list">
+                <li class="gallery__icons-item">
+        
+                  <svg class="gallery__icon" aria-label="Property Type">
+                    <use href="./img/symbol-defs.svg#icon-hotel-single-bed"></use>
+                  </svg>
+                  <span class="gallery__text">4</span>
+                  </button>
+                </li>
+                <li class="gallery__icons-item">
+        
+                  <svg class="gallery__icon" aria-label="Property Type">
+                    <use href="./img/symbol-defs.svg#icon-bathroom"></use>
+                  </svg>
+                  <span class="gallery__text">2</span>
+                  </button>
+                </li>
+                <li class="gallery__icons-item">
+        
+                  <svg class="gallery__icon" aria-label="Property Type">
+                    <use href="./img/symbol-defs.svg#icon-grid-artboard"></use>
+                  </svg>
+                  <span class="gallery__text">2</span>
+                </li>
+              </ul>
+            </a>
+          </li>
+        
+        
+          <li class="gallery__item swiper-slide">
+            <a href="./details.html" class="gallery__link">
+              <div class="gallery__item-thumb">
+                <img src="./img/House Example 5.jpg" alt="house example 1" class="img gallery__img">
+              </div>
+              <h3 class="gallery__item-title">Malto House</h3>
+        
+              <ul class="gallery__icons list">
+                <li class="gallery__icons-item">
+        
+                  <svg class="gallery__icon" aria-label="Property Type">
+                    <use href="./img/symbol-defs.svg#icon-hotel-single-bed"></use>
+                  </svg>
+                  <span class="gallery__text">4</span>
+                  </button>
+                </li>
+                <li class="gallery__icons-item">
+        
+                  <svg class="gallery__icon" aria-label="Property Type">
+                    <use href="./img/symbol-defs.svg#icon-bathroom"></use>
+                  </svg>
+                  <span class="gallery__text">2</span>
+                  </button>
+                </li>
+                <li class="gallery__icons-item">
+        
+                  <svg class="gallery__icon" aria-label="Property Type">
+                    <use href="./img/symbol-defs.svg#icon-grid-artboard"></use>
+                  </svg>
+                  <span class="gallery__text">2</span>
+                </li>
+              </ul>
+            </a>
+          </li>
+        </ul>
+      </div>
+       
+      </div>
+     
+   </div>
+  </section>
           </main>
+            <footer class="footer">
+              <div class="container footer-container">
+                <div class="footer__wrapper">
+                  <h2 class="footer__title">
+                    <span class="footer__title--white">Make your dreams a </span><span class="footer__title--orange">reality</span>
+                  </h2>
+                  <button type="button" class="footer-about__button button about__button--orange">
+                    <span class="about__button-text">Work with us</span>
+                    <svg class="about__button-icon" aria-label="Learn more">
+                      <use href="./img/symbol-defs.svg#icon-arrow-right" class=""></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="footer__content">
+                  <div class="footer__contacts">
+                    <a href="./index.html" class="logo">
+                      <svg class="logo__icon" aria-label="logo">
+                        <use href="./img/symbol-defs.svg#icon-logo" class=""></use>
+                      </svg>
+                      <svg class="logo__text" aria-label="logo">
+                        <use href="./img/symbol-defs.svg#icon-logoText" class=""></use>
+                      </svg>
+                    </a>
+                    <ul class="social list">
+                      <li class="social__item">
+                        <a href="" class="social__link">
+                          <svg class="social__icon facebook__icon">
+                            <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                          </svg>
+                        </a>
+                      </li>
+            
+                      <li class="social__item">
+                        <a href="" class="social__link">
+                          <svg class="social__icon twitter__icon">
+                            <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                          </svg>
+                        </a>
+                      </li>
+            
+                      <li class="social__item">
+                        <a href="" class="social__link">
+                          <svg class="social__icon instagram__icon">
+                            <use href="./img/symbol-defs.svg#icon-instagram"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <ul class="footer__columns">
+                    <li class="footer__column">
+                      <h4 class="footer__column-title">Column Heading</h4>
+                      <ul class="footer__links">
+                        <li class="footer__links-item">
+                          <a href="" class="footer__link">Link goes here</a>
+                        </li>
+                        <li class="footer__links-item">
+                          <a href="" class="footer__link">Link goes here</a>
+                        </li>
+                        <li class="footer__links-item">
+                          <a href="" class="footer__link">Link goes here</a>
+                        </li>
+                        <li class="footer__links-item">
+                          <a href="" class="footer__link">Link goes here</a>
+                        </li>
+                      </ul>
+                    </li>
+            
+                    <li class="footer__column">
+                      <h4 class="footer__column-title">Column Heading</h4>
+                      <ul class="footer__links">
+                        <li class="footer__links-item">
+                          <a href="" class="footer__link">Link goes here</a>
+                        </li>
+                        <li class="footer__links-item">
+                          <a href="" class="footer__link">Link goes here</a>
+                        </li>
+                        <li class="footer__links-item">
+                          <a href="" class="footer__link">Link goes here</a>
+                        </li>
+                        <li class="footer__links-item">
+                          <a href="" class="footer__link">Link goes here</a>
+                        </li>
+                      </ul>
+                    </li>
+            
+                    <li class="footer__column">
+                      <h4 class="footer__column-title">Column Heading</h4>
+                      <ul class="footer__links">
+                        <li class="footer__links-item">
+                          <a href="" class="footer__link">Link goes here</a>
+                        </li>
+                        <li class="footer__links-item">
+                          <a href="" class="footer__link">Link goes here</a>
+                        </li>
+                        <li class="footer__links-item">
+                          <a href="" class="footer__link">Link goes here</a>
+                        </li>
+                        <li class="footer__links-item">
+                          <a href="" class="footer__link">Link goes here</a>
+                        </li>
+                      </ul>
+                    </li>
+            
+            
+                  </ul>
+                </div>
+              </div>
+            
+            </footer>
+            <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+            <script src="./js/swiper.js"></script>
 </body>
 </html>

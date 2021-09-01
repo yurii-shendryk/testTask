@@ -1,6 +1,12 @@
 .logo {
   display: flex;
   align-items: center;
+  transition: transform 250ms $timing;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
 }
 .logo__icon {
   width: 11px;

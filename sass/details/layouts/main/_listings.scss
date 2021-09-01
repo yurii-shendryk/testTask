@@ -1,0 +1,14 @@
+.listings {
+  margin-top: 0;
+}
+
+.listings-container {
+  padding-top: 171px;
+  padding-bottom: 150px;
+  background-color: $main-bg-color;
+}
+
+.listings__list {
+  flex-wrap: nowrap;
+  min-width: 0;
+}
