@@ -4,6 +4,7 @@
 // @import './base/fonts';
 @import './base/common';
 @import './index/layouts/header/header';
+@import './details/layouts/header/details-header';
 @import './index/layouts/header/logo';
 @import './index/layouts/header/navigation';
 @import './details/layouts/main/goods';
@@ -17,7 +18,6 @@
 @import './index/layouts/main/gallery';
 @import './details/components/swiper';
 @import './details/layouts/main/listings';
-@import './details/layouts/main/aside';
 @import './details/components/form';
 @import './index/layouts/footer/footer';
 @import './index/layouts/footer/social';

@@ -6,6 +6,11 @@ $timing: cubic-bezier(0.4, 0, 0.2, 1);
 $main-bg-color: #f9f9f9;
 $overlay-start: rgba(0, 0, 0, 0.0001);
 $overlay-end: rgba(0, 0, 0, 0.837986);
+$gradient: linear-gradient(
+  225.52deg,
+  #271a00 0.45%,
+  rgba(0, 0, 0, 0.982162) 45.25%
+);
 $testimonials-role: #979797;
 $footer-title-orange: linear-gradient(139.15deg, #ffac12 5.46%, #c87224 96.96%);
 $footer-title-border: rgba(255, 255, 255, 0.1);

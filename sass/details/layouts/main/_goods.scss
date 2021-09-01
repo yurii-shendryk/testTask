@@ -1,46 +1,44 @@
-
-.goods-container{
-    display: flex;
-justify-content: space-between;
-align-items: center;
-    padding-top: 22px;
-    padding-bottom: 22px;
-    background-color: $main-black;
+.goods {
+  padding-top: 136px;
+  background-image: $gradient;
+}
+.goods-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 22px;
+  padding-bottom: 22px;
 }
 
-
-
-.goods__info-title{
-font-size: 32px;
-font-weight: 700;
-line-height: 1.3;
-letter-spacing: -0.8px;
-color: $main-color;
+.goods__info-title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.8px;
+  color: $main-color;
 }
 
-.goods__info-address{
-    margin-top: 4px;
-    color: $main-color;
-    opacity: 0.6;
-    font-style: normal;
+.goods__info-address {
+  margin-top: 4px;
+  color: $main-color;
+  opacity: 0.6;
+  font-style: normal;
 }
 
-
-
-.goods_price-title{
-font-size: 32px;
-font-weight: 700;
-line-height: 1.3;
-letter-spacing: -0.8px;
-color: $main-color;
+.goods_price-title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.8px;
+  color: $main-color;
 }
 
-.goods_price-text{
-    margin-top: 4px;
-    font-size: 15px;
-    line-height: 1.6;
-    letter-spacing: -0.4px;
-    text-align: right;
-    color: $testimonials-role;
+.goods_price-text {
+  margin-top: 4px;
+  font-size: 15px;
+  line-height: 1.6;
+  letter-spacing: -0.4px;
+  text-align: right;
+  color: $testimonials-role;
 }
-
