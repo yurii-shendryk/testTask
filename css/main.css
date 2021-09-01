@@ -871,6 +871,9 @@ button {
 }
 
 .about__black-text {
+  display: inline-block;
+  max-width: 428px;
+  padding-right: 0;
   color: #fff;
 }
 
