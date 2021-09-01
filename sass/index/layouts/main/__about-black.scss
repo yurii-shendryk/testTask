@@ -22,5 +22,8 @@
 
 .about__black-text {
   @extend .about__text;
+  display: inline-block;
+  max-width: 428px;
+  padding-right: 0;
   color: $main-color;
 }
